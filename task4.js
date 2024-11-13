@@ -1,10 +1,18 @@
-//calculate area using arrow function
-let calculatearea= (length, width)=>{
-    return length * width
-    
-}
+let university = {
+    name: "NkumbaUniversity",
+    location: "mukono",
+    departments: {
+        computerScience: {
+            name: "Computer Science",
+            headOfDepartment: " Alice"
+        },
+        journalism: {
+            name: "journalism",
+            headOfDepartment: " Smith"
+        }
+        
+    }
+};
 
-let length = 10;
-let width = 5;
-let area = calculatearea(length, width);
-console.log("area is:", area);
+// Log the head of the Computer Science department
+console.log(`The head of the Computer Science department is ${university.departments.computerScience.headOfDepartment}.`);
